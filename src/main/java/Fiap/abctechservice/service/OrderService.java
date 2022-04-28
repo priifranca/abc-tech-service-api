@@ -1,10 +1,13 @@
 package Fiap.abctechservice.service;
 
-import Fiap.abctechservice.model.Assistance;
+
+import Fiap.abctechservice.model.Order;
 
 import java.util.List;
 
-public interface AssistanceService {
+public interface OrderService {
+    void saveOrder(Order order, List<Long> arrayAssists);
 
-    public List<Assistance> getAssistsList();
+    void saveOrder(Order order) throws Exception;
+    List<Order> listOrdersByOperator(Long operatorId);
 }

@@ -1,9 +1,8 @@
 package Fiap.abctechservice.application;
 
-import Fiap.abctechservice.application.dto.AssistDto;
+import Fiap.abctechservice.application.dto.OrderDto;
 
-import java.util.List;
+public interface OrderApplication {
 
-public interface AssistanceApplication {
-    public List<AssistDto> getAssists();
+    void createOrder(OrderDto orderDto);
 }
