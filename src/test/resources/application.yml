@@ -1,4 +1,4 @@
-build.name: "abc-tech-service"
+build.name: abc-tech-service
 build.version: "1.0"
 
 server:
